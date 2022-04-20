@@ -24,9 +24,10 @@ namespace Full_GRASP_And_SOLID.Library
         {
             this.steps.Remove(step);
         }
-        /*Conoce todos los pasos y obtiene el costo de la clase Step de cada paso, por lo tanto es la experta para determinar el costo total de produccion e imprimirlo en consola*/
+        /*Utilizo Expert ya que conoce todos los pasos(es la encargada de agregarlos o eliminarlos), obtiene el costo de la clase Step, y con estos datos puede determinar el costo total de produccion e imprimirlo en consola*/
 
-        public double GetProductionCost(){
+        public double GetProductionCost()
+        {
             double result = 0;
 
             foreach (Step step in this.steps)
