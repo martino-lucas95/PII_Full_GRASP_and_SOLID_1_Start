@@ -16,6 +16,7 @@ namespace Full_GRASP_And_SOLID.Library
             this.Equipment = equipment;
         }
 
+        /*La clase Step es quien conoce el costo de cada paso, ya que conoce las cantidades/horas y costos por lo tanto cumple con el patron Expert*/
         public double GetstepCost(){
             return (this.Input.UnitCost * this.Quantity) + (this.Equipment.HourlyCost * this.Time);
         }
